@@ -1,0 +1,106 @@
+nav {
+  background-color: #ffc4c4;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #ffeeee;
+  color: #898aa6;
+}
+nav {
+  padding: 10px;
+  display: flex;
+}
+
+nav > a:hover {
+  background-color: #ff7ba9;
+  color: #ffeeee;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #898aa6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 1vw;
+  display: flex;
+  width: 10vw;
+  height: 3.5vh;
+  background-color: #ffc4c4;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid #ff7ba9;
+}
+
+.side_box {
+  display: flex;
+  background-color: #fad9e6;
+  border: 3px solid #ff7ba9;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 17vw;
+  height: 70vh;
+  margin: 10px;
+  justify-content: left;
+  text-align: center;
+}
+
+.side_box > img {
+  border-radius: 10px;
+}
+
+.content_t {
+  margin: 10px;
+}
+
+.content_box {
+  margin: 0px 10px;
+}
+
+.content {
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+header {
+  background-color: #f190b7;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: #ffeeee;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+}
+
+.music_container {
+  padding: 20px;
+  margin: 10px;
+  width: 57.5vw;
+  height: 65vh;
+  background-color: #ffc4c4;
+  border-radius: 10px;
+}
+
+iframe {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.main {
+  background-color: #ffc4c4;
+  border-radius: 10px;
+  width: 57.5vw;
+  padding: 20px;
+  height: 65vh;
+  margin: 10px;
+  justify-content: center;
+}

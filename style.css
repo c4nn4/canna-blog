@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-image: url(IMG_3987.jpg);
+  background-image: url("IMG_3987.jpg");
   background-color: #ffeeee;
   color: #898aa6;
 }

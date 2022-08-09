@@ -162,6 +162,11 @@ nav {
     width: 90%;
     margin: 5px;
   }
+
+  .music_container {
+    width: 90%;
+    height: 80vh;
+  }
 }
 
 @media (max-width: 270px) {
@@ -177,6 +182,11 @@ nav {
   .main {
     width: 80%;
     margin: 2px;
+  }
+
+  .music_container {
+    width: 80%;
+    height: 80vh;
   }
   body {
     font-size: smaller;

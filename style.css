@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background-image: url('IMG_3987.jpg');
+  background-image: url("IMG_3987.jpg");
   background-color: #ffeeee;
   color: #898aa6;
 }
@@ -45,8 +45,8 @@ nav > a {
   color: #898aa6;
   border-radius: 10px;
   flex-direction: column;
+  height: 50%;
   width: 17vw;
-  height: 70vh;
   margin: 10px;
   justify-content: left;
   text-align: center;
@@ -146,4 +146,39 @@ nav {
 }
 ::-webkit-scrollbar-thumb {
   background: #fad9e6;
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side_box {
+    width: 50%;
+    margin: 5px;
+  }
+
+  .main {
+    width: 90%;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 250px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .side_box {
+    width: 70%;
+    margin: 2px;
+  }
+
+  .main {
+    width: 80%;
+    margin: 2px;
+  }
+  body {
+    font-size: smaller;
+  }
 }

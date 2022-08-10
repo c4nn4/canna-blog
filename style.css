@@ -85,15 +85,6 @@ header {
   flex-direction: row;
 }
 
-.music_container {
-  padding: 20px;
-  margin: 10px;
-  width: 55%;
-  height: 65vh;
-  background-color: #ffc4c4;
-  border-radius: 10px;
-}
-
 iframe {
   border-radius: 1rem;
   overflow: hidden;
@@ -167,6 +158,19 @@ nav {
   width: 20%;
 }
 
+.up_box {
+}
+
+.up {
+  position: fixed;
+  bottom: 5%;
+  left: 80%;
+}
+
+.up_button {
+  width: 17%;
+}
+
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
@@ -190,10 +194,15 @@ nav {
   .side_container {
     width: 90%;
     flex-direction: row;
+    height: 50%;
   }
 
   .list {
     height: 50%;
+  }
+
+  .up_button {
+    width: 35%;
   }
 }
 
@@ -218,5 +227,8 @@ nav {
   }
   body {
     font-size: smaller;
+  }
+  .up_button {
+    width: 50%;
   }
 }

@@ -78,6 +78,7 @@ header {
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: left;
   flex-grow: 1;

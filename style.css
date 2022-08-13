@@ -78,7 +78,6 @@ header {
 }
 
 .container {
-  width: 100%;
   display: flex;
   justify-content: left;
   flex-grow: 1;
@@ -163,8 +162,6 @@ nav {
   width: 20%;
 }
 
-.up_box {
-}
 
 .up {
   position: fixed;

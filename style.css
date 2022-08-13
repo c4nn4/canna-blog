@@ -204,6 +204,11 @@ nav {
   .up_button {
     width: 46%;
   }
+
+  .main_con {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 270px) {

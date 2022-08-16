@@ -17,7 +17,7 @@
       }
     </style>
     <!-- css -->
-    <link rel="stylesheet" href="./style.css" />
+    <link id="csss" rel="stylesheet" href="./style.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
@@ -29,13 +29,9 @@
         <img
           height="40px"
           src="https://freepngimg.com/save/98973-nyan-cat-hd-image-free/820x771"
+          id="pic"
         />
       </h1>
-      <!-- 네비게이션바 -->
-      <nav>
-        <a href="./index.html">메인</a>
-        <a href="./music.html">음악</a>
-      </nav>
     </header>
     <div class="container">
       <div class="side_container">
@@ -265,19 +261,67 @@
         </div>
       </div>
     </div>
-    <div class="up_box">
-      <div class="up">
-        <a href="#header">
-          <img class="up_button" src="./img/IMG_89.png" />
-        </a>
-      </div>
+
+    <div class="up">
+      <a href="#header" class="up_button">
+        <img class="up_button" src="./img/IMG_89.png" />
+      </a>
     </div>
 
     <!-- 이걸 보신다는 뜻은 제 블로그의 코드를 뜯어보신다는 뜻인데... 
-      부끄러우니까 그런짓 하지마세요..헤헤... -->
+      부끄러우니까 그런짓 하지마세요..ㅠㅡㅠ -->
     <footer>
       Copyrightⓒ2022 by kawai meidochan<br />저작권은 귀여운 저한테 잇습니다
       (사실 없슴)
     </footer>
+    <!-- js -->
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+      $("#pic").hover(
+        function () {
+          // mouseover
+          $(this).attr(
+            "src",
+            "https://thumbs.gfycat.com/IgnorantSilverIsabellineshrike-size_restricted.gif"
+          );
+          event.target.style.transform = "scale(5)";
+          event.target.style.zIndex = 1;
+          event.target.style.transition = "all 0.5s";
+        },
+        function () {
+          // mouseout
+          event.target.style.transform = "scale(1)";
+          event.target.style.zIndex = 0;
+          event.target.style.transition = "all 0.5s";
+          $(this).attr(
+            "src",
+            "https://freepngimg.com/save/98973-nyan-cat-hd-image-free/820x771"
+          );
+        }
+      );
+      jQuery(document).ready(function ($) {
+        $(".up_button").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
+        });
+      });
+
+      $(".up_button").hover(
+        function () {
+          // mouseover
+
+          event.target.style.transform = "scale(1.2)";
+          event.target.style.zIndex = 1;
+          event.target.style.transition = "all 0.5s";
+        },
+        function () {
+          // mouseout
+          event.target.style.transform = "scale(1)";
+          event.target.style.zIndex = 0;
+          event.target.style.transition = "all 0.5s";
+        }
+      );
+    </script>
   </body>
 </html>

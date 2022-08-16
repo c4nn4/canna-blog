@@ -99,6 +99,16 @@ iframe {
   justify-content: center;
   flex-wrap: wrap;
 }
+.music_con {
+  background-color: #fad9e6;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70vh;
+}
 
 .main_con {
   width: 65%;
